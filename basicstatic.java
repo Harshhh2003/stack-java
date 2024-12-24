@@ -17,7 +17,5 @@ public class basicstatic{
         while(st.size()>1){
             st.pop();
             System.out.println(st); // o/p = 1
-        }
-        
-    }
+        } }
 } 
