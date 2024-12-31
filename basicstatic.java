@@ -1,7 +1,8 @@
 import java.util.Stack;
 public class basicstatic{
-
     public static void main(String[] args) {
+
+        
         Stack<Integer> st = new Stack<>();
         System.out.println(st.isEmpty()); // true o/p
         System.out.println("size is   :    "  +   st.size()); // empty stack o/p will be 0;
