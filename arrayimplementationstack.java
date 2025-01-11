@@ -64,16 +64,14 @@ void push(int x) {
             arr[idx] = x;
             idx++;
         }
- 
-        int peek() {
-            if (idx <= 0) {
+  int peek() {
+     if (idx <= 0) {
                 return -1;  }
             return arr[idx - 1];
         }
    int pop() {
             if (idx <= 0) {
-                return -1;
-            }
+                return -1;  }
             int top = arr[idx - 1];
             arr[idx - 1] = 0;
             idx--;
@@ -94,8 +92,7 @@ void push(int x) {
         st.push(10);
         st.push(23);
         st.display(); 
-
-        System.out.println(st.size());
+  System.out.println(st.size());
         st.pop();
         st.display();
 
