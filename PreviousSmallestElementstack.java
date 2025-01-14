@@ -1,0 +1,40 @@
+import java.util.*;
+public  class PreviousSmallestElementstack{
+    public static void main(String[] args) {
+  int a []  = {  2 , 5 ,6,  1, 6, 3};
+        int copy []  = new int [a.length];
+        Stack<Integer> st = new Stack<>();
+        copy[0] = -1;
+        st.push(a[0]);
+      for(int i = 1 ; i<a.length; i++){
+        while(!st.isEmpty() && st.peek()>= a[i]){
+
+            st.pop();
+ 
+        } if(st.isEmpty()){
+            copy[i]  = -1;
+
+        } else{
+            copy[i] = st.peek();
+
+        }
+   st.push(a[i]);
+   
+
+   } 
+   for(int i :  copy){
+    System.out.print(i + " ");
+    
+   }
+   
+   
+    }
+
+        
+
+}
+
+
+
+
+ 
