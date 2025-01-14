@@ -1,17 +1,19 @@
 import java.util.Stack;
 
-public class nextgreaterelementstack2 {
+public class greaterelementstack3 {
+
     public static void main(String[] args) {
-        int[] a = {1, 5, 3, 2, 1, 6, 3, 4};
+        int[] a = {2, 3, 4, 5, 1, 8, 9};
         int[] copy = new int[a.length];
         Stack<Integer> st = new Stack<>();
         
-        copy[a.length - 1] = -1;
-        st.push(a[a.length - 1]);
+        copy[0] = -1;
+        st.push(a[0]);
         
-        for (int i = a.length - 2; i >= 0; i--) {
+        for (int i = 1; i < a.length; i++) {
             while (!st.isEmpty() && st.peek() <= a[i]) {
-                st.pop(); }
+                st.pop();
+            }
             if (st.isEmpty()) {
                 copy[i] = -1;
             } else {
